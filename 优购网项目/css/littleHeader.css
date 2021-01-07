@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;  
+}
+li{
+    list-style: none;
+}
+
+ /* 首页头部 */
+
+.header{
+    height: 40px;
+    background: #333;
+    color:#666;   
+    font-family: '宋体';
+}
+.header a{
+    color: white;
+    line-height: 40px;
+}
+.header li{
+    float: left;
+    
+    font-size: 12px;
+    margin: auto 13px;
+}
+.header-left{
+    float: left;
+    margin-left: 132px;
+    position: relative;
+
+}
+.header-right{
+   float: right; 
+   margin-right: 92px;
+}
+.erweima img{
+    width: 120px;
+    height: 120px;
+}
+
+.erweima{ 
+    position: absolute;
+    width: 140px;
+    height: 162px;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    display: none;
+    z-index: 6;
+    background-color: #fff;
+}
+.concern{
+    left: -50px;
+    top: 44px;
+}
+.downloadAPP{
+    left: 10px;
+    top: 44px;
+}
+.erweima span{
+    margin: 0 29px;
+    line-height: 20px;
+}
+.downloadAPP span{
+    margin: 0 23px;
+    
+}
+
+.header a:hover{
+    color: #666;
+}
+.header li:hover .erweima{
+    display: block;
+}
+.notice{
+    
+    position: absolute;
+    left: 1210px;
+    width: 217px;
+    height: 191px;
+    border: 1px solid #eee;
+    display: none;
+    background-color: white;
+    z-index: 6;
+}
+.notice ul li{
+    float: none;
+    border-bottom: 1px solid #eee;
+}
+.header .notice a{
+    color:#999;
+
+}
+.header .notice a:hover{
+    color: red;
+
+}
+
+.header .header-right li:hover .notice{
+    display: block;   
+}

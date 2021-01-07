@@ -1,0 +1,133 @@
+.footerTip{
+    margin: 0 auto;
+    height:27px;
+    width: 1190px;
+
+}
+.footerTipPic{
+    color: #000;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url(../img/首页图标.png) -10px -10px;
+    vertical-align: middle;
+}
+.footerTip li{
+    float: left;
+    margin-right: 50px;
+}
+.footerTip li i{
+    margin-right: 10px;
+}
+.footerTip li a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+.footerTipAll{
+    width: 100%;
+    background-color: #333;
+    padding: 46px 0 42px;
+    border-bottom: 1px solid #666;
+}
+.footerAll{
+    height: 473px;
+    background-color: #333;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.footer{
+    margin: 0 auto;
+    width: 1190px;
+    height: 412px;
+}
+.footerUp {
+    overflow: hidden;
+}
+.footerUp ul{
+    float: left;
+    margin-right: 90px;
+    color: white;
+    font-size: 12px;
+}
+.footerUp ul li{
+    margin-bottom: 20px;
+} 
+.footerUp ul a{
+    color: #666;
+}
+.footerUp ul a:hover{
+    color: white;
+}
+.kefu{
+    display: inline-block;
+    width: 17px;
+    height: 13px;
+    background: url(../img/首页图标.png) -124px -140px;
+    vertical-align: middle;
+}
+
+.footerMid{
+    height: 187px;
+}
+.footerM-left {
+    width: 410px;
+}
+.footerM-left img{
+   margin-top: 140px;
+    width: 116px;
+    height: 47px;
+    margin-left: 12px;
+}
+.footerM-right,.footerM-left{
+    float: left;
+}
+.footerM-right{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 180px;
+    float: left;
+    width: 298px;
+    height: 156px;
+}
+.footerM-right dl{
+    width: 120px;
+    height: 152px;
+    font-size: 12px;
+    color: white;
+    
+}
+.footerM-right dl:nth-of-type(2) dt:nth-of-type(1){
+    margin-bottom:10px;
+}
+.footerM-right dl:nth-of-type(1) dt:nth-of-type(1){
+    margin-bottom: 14px;
+    padding: 6.5px 7px;
+    box-sizing: border-box;
+    background-color: white;
+}
+.footerUl{
+    height: 20px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+.footerUl li{
+    float: left;  
+} 
+.footerUl li a{
+    color: white;
+    border-right: 1px solid #999;
+    padding: 0 10px;
+}
+.footerUl li:nth-of-type(6) a{
+    border-right: none;
+}
+.footerUl li:nth-of-type(1) a{
+    padding-left: 0;
+}
+.footer p{
+    font-size: 12px;
+    color: white;
+}

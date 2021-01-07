@@ -1,0 +1,125 @@
+.navLeft i{
+    width: 10px;
+    height: 10px;
+    background: url(../img/首页图标.png) -212px -124px;
+    margin-right: 9px;
+    float: left;
+    margin-top: 3px;
+}
+
+.ProListMain{
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 1190px;
+    overflow: hidden;
+}
+
+.ProListTip{
+    text-align: right;
+}
+.ProListTip img{
+    width: 64px;
+    height: 34px;
+    vertical-align: middle;
+}
+.navLeftAll{
+    width: 180px;
+    height: 604px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+.navLeft{
+    width: 180px;
+    height: 604px;
+    z-index: -9;
+}
+.navLeft ul{
+    display: none;
+}
+.navLeft  li{
+    margin: 10px 0;
+}
+.navLeft li ul{
+    color: #666;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.navLeftAll,.mainRight{
+    float: left;
+}
+.mainRight{
+    
+    width: 1010px;
+    
+}
+.ProListBanner{
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.ProListBanner p{
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+.mainRight ul{
+    min-height: 600px;
+}
+.mainRight ul li{
+    width: 230px;
+    height: 400px;
+    padding: 11px;
+    background-color: #fff;
+    
+    color: #333;
+    text-align: center;
+    float: left;
+}
+
+ .ProListU img:nth-of-type(1){
+    display: block;
+    width: 230px;
+    height: 230px;
+}
+.ProListU{
+    padding: 33px 0;
+    background-color: white;
+}
+
+.ProListPro p:nth-of-type(2) a{
+    display: inline-block;
+    position: relative;
+    left: 30px;
+}
+.ProListPro p .icon-xin{
+    
+    color: #999;
+    opacity: 0;
+}
+.ProListPro p:nth-of-type(1){
+    font-size: 12px;
+    color: #333;
+    line-height: 20px;
+    margin: 20px 0;
+}
+.ProListPro p:nth-of-type(2) span:nth-of-type(2){
+    font-size: 14px;
+    color: #ccc;
+    margin-left: 10px;
+    margin-top: 1px;
+    text-decoration: line-through;
+
+}
+.ProListPro:hover{
+    background-color: #f6f6f6;
+}
+.ProListPro:hover .icon-xin{
+    opacity: 1;
+
+}
+
+
+
+

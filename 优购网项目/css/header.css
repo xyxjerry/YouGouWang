@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;  
+}
+li{
+    list-style: none;
+}
+
+ /* 首页头部 */
+
+.header{
+    height: 40px;
+    background: #333;
+    color:#666;   
+    font-family: '宋体';
+}
+.header a{
+    color: white;
+    line-height: 40px;
+}
+.header li{
+    float: left;
+    
+    font-size: 12px;
+    margin: auto 13px;
+}
+.header-left{
+    float: left;
+    margin-left: 132px;
+    position: relative;
+
+}
+.header-right{
+   float: right; 
+   margin-right: 92px;
+}
+.erweima img{
+    width: 120px;
+    height: 120px;
+}
+
+.erweima{ 
+    position: absolute;
+    width: 140px;
+    height: 162px;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    display: none;
+    z-index: 99;
+}
+.concern{
+    left: -50px;
+    top: 44px;
+}
+.downloadAPP{
+    left: 10px;
+    top: 44px;
+}
+.erweima span{
+    margin: 0 29px;
+    line-height: 20px;
+}
+.downloadAPP span{
+    margin: 0 23px;
+    
+}
+
+.header a:hover{
+    color: #666;
+}
+.header li:hover .erweima{
+    display: block;
+}
+.notice{
+    
+    position: absolute;
+    left: 1210px;
+    width: 217px;
+    height: 191px;
+    border: 1px solid #eee;
+    display: none;
+    background-color: white;
+    z-index:99;
+}
+.notice ul li{
+    float: none;
+    border-bottom: 1px solid #eee;
+}
+.header .notice a{
+    color:#999;
+
+}
+.header .notice a:hover{
+    color: red;
+
+}
+
+.header .header-right li:hover .notice{
+    display: block;   
+}
+
+/* 导航栏 */
+
+.navAll{
+    width: 100%;
+    background-color: white;
+}
+.nav{
+    height: 219px;
+}
+.logo{
+    width: 98px;
+    height: 168px;
+    padding-top: 55px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.disLogo{
+    display: none;
+}
+.navigation{
+    width: 1190px;
+    height: 50px;
+    margin: 0 auto;
+}
+.navigation ul li{
+    float: left;
+    vertical-align: middle;
+    font-size: 20px;
+    width: 80px;
+    font-weight: bold;
+    padding:13px 15px;
+}
+
+.search{
+    width: 180px;
+    height: 25px;
+    border-bottom: 1px solid #000;
+    float: right;
+    margin-top: 15px;
+}
+.search input{
+    width: 150px;
+    border: none;
+    outline:none;  
+    display: inline-block;  
+}
+.navigation ul a{
+    display: inline-block;
+    height: 24px;
+    border-bottom: 1px solid #333;
+    border: none;
+    color: black;
+}
+
+.navigation ul a:hover{
+    border-bottom: 1px solid #333;
+      
+}
+/* .navigation li a:hover .wShoesAll{
+   display: block;  
+} */
+
+.wShoesAll{
+    position: absolute;
+    top:259px ;
+    left: -225px; 
+    padding: 30px 0 70px 0;
+    display: none;
+    border-bottom: 3px solid #000;
+    width: 2000px;
+    z-index: 11111;
+    background-color: white;
+
+}
+.womenShoes{
+    width: 1190px;
+    margin: 0 auto;
+}
+.womenShoes-1{
+    width: 130px;    
+}
+.womenShoes-2{
+    width: 79px;    
+}
+.navigation  .womenShoes dt a{
+    border: none;
+}
+.navigation  .womenShoes dd a{
+    display: block;
+    height: 14px;  
+    color: #666;  
+    border: none;
+}
+.womenShoes dl{
+    float: left;
+    margin-right: 130px;
+} 
+
+.womenShoes dt,.womenShoes dd{
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+
+.womenShoes dt{
+    font-size: 16px;
+   
+}
+.womenShoes dt{
+    width: 78px;   
+}
+.womenShoes dt a{
+    color: #333;
+}

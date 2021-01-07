@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/littleHeader.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/iconfont.css">
+  <link rel="stylesheet" href="../css/register.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <link href="https://cdn.bootcdn.net/ajax/libs/layer/2.3/skin/layer.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- 首页头部 -->
+  <div class="header">
+    <ul class="header-left">
+      <li>
+        <a href="">关注</a>
+        <div class="concern erweima">
+          <img src="../img/关注二维码.jpg" alt="">
+          <span>关注公众号</span>
+        </div>
+      </li>
+      <li>
+        <a href="">下载APP</a>
+        <div class="downloadAPP erweima">
+          <img src="../img/APP二维码.jpg" alt="">
+          <span>优购APP下载</span>
+        </div>
+      </li>
+    </ul>
+    <ul class="header-right">
+      <li>
+        <a href="./login.html">登录</a>/
+        <a href="./register.html">注册</a>
+      </li>
+      <li>
+        <a href="">
+          <icon class="iconfont icon-xin"></icon>
+          <sapn>收藏</sapn>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <icon class="iconfont icon-gouwudaidaizishangcheng
+            "></icon>
+          <span>购物袋</span>
+        </a>
+      </li>
+      <li>
+        <a href="">公告</a>
+        <div class="notice">
+          <ul>
+            <li><a href="">近期物流情况安排通知</a></li>
+            <li><a href="">优购客服电话变更</a></li>
+            <li><a href="">关闭分享购频道</a></li>
+            <li><a href="">提醒会员谨防诈骗电话</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="logoTip">
+    <div class="logoTip-left">
+      <a href="../html/index.html">
+        <img src="../img/looginPic/looginLOGO.png" alt="">
+      </a>
+    </div>
+    <div>
+      新用户注册
+    </div>
+  </div>
+  <div class="banner regbanner">
+    <div class="looginDiv regDiv">
+      <ul>
+        <li class=""><a href="#">注册</a></li>
+        <li class=""><a href="../html/login.html">登录</a></li>
+      </ul>
+      <div class="looginDivAll">
+        <div class="looginDiv2 looginDivPer regDivOne">
+          <div class="zhanghao">
+            <span>手机号</span>
+            <input class="uName" type="text" placeholder="请输入您的手机号">
+          </div>
+          <br>
+          <div class="mima-left">
+            <span>验证码</span>
+            <input type="text" value="">
+          </div>
+          <br>
+          <br>
+          <div class="mima">
+            <div class="mima-left">
+              <span>短信验证码</span>
+              <input type="text" value="">
+            </div>
+            <input type="button" value="获取验证码"></input>
+          </div>
+          <br>
+          <div class="zhanghao">
+            <span>密码</span>
+            <input class="psd" type="text" placeholder="字母、数字、符号均可，6-25个字符以内">
+          </div>
+          <br>
+          <div class="zhanghao">
+            <span>确认密码</span>
+            <input class="PsdSure" type="text" placeholder="">
+          </div>
+          <br>
+          <p><input class="check" type="checkbox" checked> 我已阅读并同意《优购会员注册协议》</p>
+          <br>
+          <button><a>确认并注册</a></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var check = document.querySelector('.check') //选中协议框
+    var Psd = document.querySelector('.psd') //密码
+    var PsdSure = document.querySelector('.PsdSure'); //确认密码
+    var Phone = document.querySelector('.uName') //手机号
+    var btn = document.querySelector('button') //确认并注册
+
+    var reg6 = /^[1][\d]{10}$/, //手机号  首个数字为1，后面10为任意数字
+      reg2 = /^[\W\da-zA-Z_]{6,20}$/; //密码  6--20位数字,字母,任意字符
+
+    var n2 = false,
+      n3 = false,
+      n7 = false;
+
+    //手机号
+    Phone.onblur = function () {
+      if (this.value == '') {
+        layer.tips('手机号不能为空', '.uName');
+      } else if (!reg6.test(this.value)) {
+        layer.tips('手机号格式不对', '.uName');
+      } else {
+        layer.tips('手机号正确！', '.uName');
+        return n7 = true;
+      }
+    }
+    //密码
+    Psd.onblur = function () {
+      if (this.value == '') {
+        layer.tips('密码不能为空！', '.psd');
+      } else if (!reg2.test(this.value)) {
+        layer.tips('请输入6--20位数字,字母,任意字符', '.psd');
+      } else {
+        layer.tips('格式正确! ', '.psd');
+        return n2 = true;
+      }
+    }
+
+    //确认密码
+    PsdSure.onblur = function () {
+      if (this.value == '') {
+        layer.tips('确认密码不能为空！', '.PsdSure');
+      } else if (this.value != Psd.value) {
+        layer.tips('两次密码不相同 ', '.PsdSure');
+      } else {
+        layer.tips('确认密码正确! ', '.PsdSure');
+        return n3 = true;
+      }
+    }
+
+
+    //点击注册
+    btn.onclick = function () {
+
+      var regs = n2 == false || n7 == false || n3 == false;
+      console.log(regs)
+      if (!regs == false) {
+        layer.alert('请 认 真 完 善 每 一 项 ！', {
+          skin: 'layui-layer-lan',
+          closeBtn: 0,
+          anim: 4, //动画类型
+        });
+        return false;
+      } else if (check.checked == false) {
+        layer.alert('请 先 点 击 确 认 已 阅 读 按 钮 ！', {
+          skin: 'layui-layer-molv', //样式类名   
+          closeBtn: 0
+        })
+        return false;
+      } else {
+        let username = Phone.value
+        let password = Psd.value
+        axios.get('http://jx.xuzhixiang.top/ap/api/reg.php', {
+          params: {
+            username,
+            password
+          }
+        }).then(res => {
+          console.log(res.data)
+          if (res.data.code === 1) {
+     
+            alert(res.data.msg)
+            location.href = '../html/login.html'
+          } else {
+            alert(res.data.msg)
+          }
+        })
+        return true;
+      }
+
+
+    }
+  </script>
+  <div class="footer regfooter">
+    <p>
+      Copyright © 2011-2014 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证：粤 B2-20090203
+    </p>
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/layer/3.1.1/layer.min.js"></script>
+</body>
+
+</html>

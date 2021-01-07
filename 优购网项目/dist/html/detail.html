@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="../js/detail.js"></script>
+</head>
+
+<body>
+
+    <!-- 首页头部 -->
+    <div class="header">
+        <ul class="header-left">
+            <li>
+                <a href="">关注</a>
+                <div class="concern erweima">
+                   
+                        <img src="../img/关注二维码.jpg" alt="">
+                  
+                    
+                    <span>关注公众号</span>
+                </div>
+            </li>
+            <li>
+                <a href="">下载APP</a>
+                <div class="downloadAPP erweima">
+                    <img src="../img/APP二维码.jpg" alt="">
+                    <span>优购APP下载</span>
+                </div>
+            </li>
+        </ul>
+        <ul class="header-right">
+            <li>
+                <a href="./login.html">登录</a>/
+                <a href="./register.html">注册</a>
+            </li>
+            <li>
+                <a href="">
+                    <icon class="iconfont icon-xin"></icon>
+                    <sapn>收藏</sapn>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <icon class="iconfont icon-gouwudaidaizishangcheng
+                "></icon>
+                    <span>购物袋</span>
+                </a>
+            </li>
+            <li>
+                <a href="">公告</a>
+                <div class="notice">
+                    <ul>
+                        <li><a href="">近期物流情况安排通知</a></li>
+                        <li><a href="">优购客服电话变更</a></li>
+                        <li><a href="">关闭分享购频道</a></li>
+                        <li><a href="">提醒会员谨防诈骗电话</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="logo">
+            <a href="../html/index.html">
+            <img src="../img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="navAll">
+            <div class="navigation">
+                <ul>
+                    <li class="disLogo" style="padding:6px"><a href=""><img style="width:60px;height:38px;"
+                                src="../img/logo.png" alt=""></a></li>
+                    <li><a href="">首页</a></li>
+                    <li>
+                        <a href="">女鞋</a>
+                        <div class="wShoesAll">
+                            <div class="womenShoes">
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">品牌</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">热销推荐</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">女士靴子</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                </dl>
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">女士单鞋</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">女士凉鞋</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li>
+                        <a href="">男鞋</a>
+                        <div class="wShoesAll">
+                            <div class="womenShoes">
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">品牌</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">热销推荐</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                </dl>
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">精选分类</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">运动</a>
+                        <div class="wShoesAll">
+                            <div class="womenShoes">
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">品牌</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">运动鞋</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">运动服</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">关键词</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">户外</a>
+                        <div class="wShoesAll">
+                            <div class="womenShoes">
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">品牌</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">户外鞋</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">户外服</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">关键词</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">儿童</a>
+                        <div class="wShoesAll">
+                            <div class="womenShoes">
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">热门品牌</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">品牌</a></dd>
+                                    <dd><a href="">百丽</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">童鞋</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">户外鞋</a></dd>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">户外鞋</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">童装</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">品牌</a></dd>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">品牌</a></dd>
+                                    <dd><a href="">百丽</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="">箱包</a>
+                        <div class="wShoesAll">
+                            <div class="womenShoes">
+                                <dl class="womenShoes-1">
+                                    <dt><a href="">品牌</a></dt>
+                                    <dd><a href="">百丽</a></dd>
+                                    <dd><a href="">他她</a></dd>
+                                    <dd><a href="">天美意</a></dd>
+                                    <dd><a href="">思加图</a></dd>
+                                    <dd><a href="">深达</a></dd>
+                                    <dd><a href="">真美诗</a></dd>
+                                    <dd><a href="">妙丽</a></dd>
+                                    <dd><a href="">拔佳</a></dd>
+                                    <dd><a href="">暇步士</a></dd>
+                                    <dd><a href="">百思图</a></dd>
+                                    <dd><a href="">圣伽步</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">热销推荐</a></dt>
+                                    <dd><a href="">2020新款</a></dd>
+                                    <dd><a href="">人气TOP</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">魅力女包</a></dt>
+                                    <dd><a href="">单肩/斜跨</a></dd>
+                                    <dd><a href="">手提/手包</a></dd>
+                                    <dd><a href="">双肩包</a></dd>
+                                </dl>
+                                <dl class="womenShoes-2">
+                                    <dt><a href="">经典男包</a></dt>
+                                    <dd><a href="">手提/手包</a></dd>
+                                    <dd><a href="">单肩/斜跨</a></dd>
+                                    <dd><a href="">双肩包</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="text">
+                    <icon class="iconfont icon-fangdajing"></icon>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--  ------------------------------------------------------------------->
+    <div class="detailMain">
+        <!-- <div class="detailPic">
+            <img src="../img/轮播鞋2.jpg" alt="">
+        </div>
+        <div class="detailDesc">
+            <a href="#">
+                <img src="../img/轮播鞋T1.png" alt="">
+            </a>
+            <p>详情</p>
+            <p>￥998</p>
+            <input type="number"><br>
+            <button><a href="#">加入购物车</a></button>
+            <p>
+                <i></i><span>收藏</span><i></i>
+                <span>分享</span>    
+            </p>
+        </div>
+         -->
+    </div>
+
+
+
+
+    <!-- 页面底部 -->
+    <div class="footerTipAll">
+        <div class="footerTipB">
+            <ul class="footerTip">
+                <li>
+                    <a href="">
+                        <i class="footerTipPic"></i>
+                        <span>正品保证</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="footerTipPic"></i>
+                        <span>10天退换货</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="footerTipPic"></i>
+                        <span>10天调补差价额</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="footerTipPic"></i>
+                        <span>09:00—21:00在线客服</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerAll">
+        <div class="footer">
+            <div class="footerUp">
+                <ul>
+                    <li>新手帮助</li>
+                    <li><a href="">交易条款协议</a></li>
+                    <li><a href="">注册新用户</a></li>
+                    <li><a href="">会员积分详情</a></li>
+                </ul>
+                <ul>
+                    <li>购物指南</li>
+                    <li><a href="">订购流程</a></li>
+                    <li><a href="">验货与签收</a></li>
+                    <li><a href="">订单配送</a></li>
+                </ul>
+                <ul>
+                    <li>支付/配送</li>
+                    <li><a href="">支付方式</a></li>
+                    <li><a href="">配送方式</a></li>
+                    <li><a href="">配送时间及运费</a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="">退换货政策</a></li>
+                    <li><a href="">退款说明</a></li>
+                    <li><a href="">发票制度</a></li>
+                </ul>
+                <ul>
+                    <li>会员服务</li>
+                    <li><a href="">找回密码</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+                <ul>
+                    <li>优购客服</li>
+                    <li><a href="">
+                            <i class="kefu"></i>
+                            在线咨询
+                        </a></li>
+                    <li><a href="">Email: ygservice@belle.com.cn
+                        </a></li>
+                    <li><a href="">微信客服：优购时尚商城</a></li>
+                </ul>
+            </div>
+            <div class="footerMid">
+                <div class="footerM-left">
+                    <span><a href="https://szcert.ebs.org.cn/c695a892-7c38-4e69-8ee0-e147c3668221"><img
+                                src="../img/footerPic1.gif" alt=""></a></span>
+                    <span><a href="http://gd.beian.miit.gov.cn/"><img src="../img/footerPic2.png" alt=""></span></a>
+                    <span><a href="http://www.cyberpolice.cn/wfjb/"><img src="../img/footerPic3.png" alt=""></a></span>
+                </div>
+                <div class="footerM-right">
+                    <dl>
+                        <dt><img src="../img/APP二维码.jpg" alt=""></dt>
+                        <dd>扫描下载手机客户端</dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="../img/关注二维码.jpg" alt=""></dt>
+                        <dd>关注公众号</dd>
+                    </dl>
+                </div>
+            </div>
+            <ul class="footerUl">
+                <li><a href="">关于优购</a></li>
+                <li><a href="">集团采购</a></li>
+                <li><a href="">招贤纳士</a></li>
+                <li><a href="">手机优购</a></li>
+                <li><a href="">联系我们</a></li>
+                <li><a href="">友情链接</a></li>
+            </ul>
+            <p>
+                Copyright © 2011-2016 Yougou Technology Co., Ltd.粤ICP备09070608号 深公网安备：4403101910665 粤公网安备
+                44030502000017号
+            </p>
+        </div>
+    </div>
+    <script src='../js/index.js'></script>
+</body>
+
+</html>
