@@ -42,7 +42,7 @@ function proListFn() {
         </a>
         <p>${Vper.pdesc}</p>
         <p>￥${Vper.pprice}</p>
-        <input type="number" value="1"><br>
+        <input type="number" value="1" ><br>
         <button class="addBtn"><a href="javascript:;">加入购物车</a></button>
         <p>
             <i></i><span>收藏</span><i></i>

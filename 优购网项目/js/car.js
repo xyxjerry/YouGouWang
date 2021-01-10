@@ -65,9 +65,9 @@ function delProFn() {
                 }
             }).then(v => {
                 alert(v.data.msg)
-                n.parentNode.parentNode.remove()
+                n.parentNode.parentNode.parentNode.remove()
                 updateCountPrice()
-                location.reload()
+               // location.reload()
             })
         }
     })
@@ -82,7 +82,13 @@ function delProFn() {
 // }
 function carclearFn() {
     $('.cartclear').click(function () {
-        let carList = $(this).parent().parent().siblings('ul').children()
+
+        layer.msg(' 你确定清空购物车吗？', {
+            time: 0 //不自动关闭
+            ,btn: ['确定', '取消']
+            ,yes: function(index){
+              layer.close(index);
+              let carList = $('.cartclear').parent().parent().siblings('ul').children()
         console.log(carList)
         carList.each(function (i, n) {
             console.log(n)
@@ -95,12 +101,19 @@ function carclearFn() {
                     pid
                 }
             }).then(
+                
                 n.remove()
                 
             )
             
         })
-        location.reload()
+        carBabyFn()
+            }
+          });
+       
+        
+        
+        //location.reload()
     })
 
 }
